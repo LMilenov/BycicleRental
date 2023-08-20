@@ -37,7 +37,7 @@ namespace BycicleRental.Services
             var existingReservation = dbContext.Reservations.FirstOrDefault(r => r.Id == reservation.Id);
             if (existingReservation != null)
             {
-                existingReservation.Bicycle = reservation.Bicycle;
+                existingReservation.Bycicle = reservation.Bycicle;
                 existingReservation.Customer = reservation.Customer;
                 existingReservation.Location = reservation.Location;
                 existingReservation.ReservationStart = reservation.ReservationStart;

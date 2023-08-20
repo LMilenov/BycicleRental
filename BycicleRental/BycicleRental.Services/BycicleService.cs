@@ -18,23 +18,23 @@ namespace BycicleRental.Services
 
         public IEnumerable<Bycicle> GetAllBicycles()
         {
-            return dbContext.Bycycles.ToList();
+            return dbContext.Bycicles.ToList();
         }
 
         public Bycicle GetBicycleById(int id)
         {
-            return dbContext.Bycycles.FirstOrDefault(b => b.Id == id);
+            return dbContext.Bycicles.FirstOrDefault(b => b.Id == id);
         }
 
         public void AddNewBicycle(Bycicle bicycle)
         {
-            dbContext.Bycycles.Add(bicycle);
+            dbContext.Bycicles.Add(bicycle);
             dbContext.SaveChanges();
         }
 
         public void UpdateBicycle(Bycicle bicycle)
         {
-            var existingBicycle = dbContext.Bycycles.FirstOrDefault(b => b.Id == bicycle.Id);
+            var existingBicycle = dbContext.Bycicles.FirstOrDefault(b => b.Id == bicycle.Id);
             if (existingBicycle != null)
             {
                 existingBicycle.Brand = bicycle.Brand;
@@ -46,10 +46,10 @@ namespace BycicleRental.Services
 
         public void RemoveBicycle(int id)
         {
-            var bicycleToRemove = dbContext.Bycycles.FirstOrDefault(b => b.Id == id);
+            var bicycleToRemove = dbContext.Bycicles.FirstOrDefault(b => b.Id == id);
             if (bicycleToRemove != null)
             {
-                dbContext.Bycycles.Remove(bicycleToRemove);
+                dbContext.Bycicles.Remove(bicycleToRemove);
                 dbContext.SaveChanges();
             }
         }
