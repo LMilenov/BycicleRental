@@ -1,6 +1,7 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
+    <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
@@ -19,7 +20,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\BycicleRental.Models\BycicleRental.Models.csproj" />
+    <ProjectReference Include="..\BycicleRental.Data\BicycleRental.Data.csproj" />
+    <ProjectReference Include="..\BycicleRental.Models\BicycleRental.Models.csproj" />
+    <ProjectReference Include="..\BycicleRental.Services\BicycleRental.Services.csproj" />
   </ItemGroup>
 
 </Project>

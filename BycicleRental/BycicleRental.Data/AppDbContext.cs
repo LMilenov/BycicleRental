@@ -10,6 +10,11 @@
     public class AppDbContext : DbContext
     {
         private const string connectionString = @"Server=DESKTOP-UACUS9A; Initial Catalog=BycicleRentalEf; Integrated Security=true; Trusted_Connection=true";
+
+        public AppDbContext(DbContextOptions<AppDbContext> options) : base(options)
+        {
+        }
+
         public virtual DbSet<Bycicle> Bycicles { get; set; }
         public virtual DbSet<Customer> Customers { get; set; }
         public virtual DbSet<Insurance> Insurances { get; set; }
