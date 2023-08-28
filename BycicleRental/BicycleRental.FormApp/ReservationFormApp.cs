@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BycicleRental.Models;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -14,5 +15,11 @@ namespace BicycleRental.FormApp
         {
             InitializeComponent();
         }
+
+        private void ReservationFormApp_Load(object sender, EventArgs e)
+        {
+            
+        }
+        
     }
 }
