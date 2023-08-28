@@ -3,19 +3,16 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace BycicleRental.FormApp
+namespace BicycleRental.FormApp
 {
-    public partial class MainForm : Form
+    public partial class LocationFormApp : Form
     {
-        public MainForm()
+        public LocationFormApp()
         {
             InitializeComponent();
         }
-
     }
 }

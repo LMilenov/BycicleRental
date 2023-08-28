@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace BycicleRental.FormApp
+namespace BicycleRental.FormApp
 {
     internal static class Program
     {
@@ -17,7 +17,7 @@ namespace BycicleRental.FormApp
             Application.SetHighDpiMode(HighDpiMode.SystemAware);
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new MainForm());
+            Application.Run(new MainFormApp());
         }
     }
 }
