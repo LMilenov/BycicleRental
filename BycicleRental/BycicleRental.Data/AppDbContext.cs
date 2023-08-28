@@ -11,6 +11,10 @@
     {
         private const string connectionString = @"Server=DESKTOP-UACUS9A; Initial Catalog=BycicleRentalEf; Integrated Security=true; Trusted_Connection=true";
 
+        public AppDbContext()
+        {
+        }
+
         public AppDbContext(DbContextOptions<AppDbContext> options) : base(options)
         {
         }

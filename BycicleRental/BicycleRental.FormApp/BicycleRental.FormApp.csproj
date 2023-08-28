@@ -6,4 +6,12 @@
     <UseWindowsForms>true</UseWindowsForms>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\BycicleRental.ConsoleApp\BicycleRental.ConsoleApp.csproj" />
+    <ProjectReference Include="..\BycicleRental.Data\BicycleRental.Data.csproj" />
+    <ProjectReference Include="..\BycicleRental.Models\BicycleRental.Models.csproj" />
+    <ProjectReference Include="..\BycicleRental.Seeder\BicycleRental.Seeder.csproj" />
+    <ProjectReference Include="..\BycicleRental.Services\BicycleRental.Services.csproj" />
+  </ItemGroup>
+
 </Project>
